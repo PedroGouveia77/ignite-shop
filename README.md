@@ -14,12 +14,6 @@ A aplicação permite:
 
 ---
 
-## 🌍 Acesse Online
-
-🔗 **Deploy:** [Ignite Shop - Vercel]()
-
----
-
 ## 🚀 Tecnologias Principais
 
 | Tecnologia       | Versão       | Descrição |
