@@ -4,12 +4,11 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" width="80"/>
 </p>
 
-Ignite Shop é uma **loja virtual** moderna que permite aos usuários navegar por produtos, adicionar itens ao carrinho e realizar pagamentos de forma segura através do Stripe.
+Ignite Shop é uma **loja virtual** moderna que permite aos usuários navegar por produtos em forma de carrossel, escolher o desejado e realizar pagamentos de forma segura através do Stripe.
 
 A aplicação permite:
 ✅ Navegar por uma lista de produtos
 ✅ Visualizar detalhes de cada produto
-✅ Adicionar produtos ao carrinho
 ✅ Realizar pagamentos seguros via Stripe
 ✅ Visualizar histórico de compras
 
@@ -17,7 +16,7 @@ A aplicação permite:
 
 ## 🌍 Acesse Online
 
-🔗 **Deploy:** [Ignite Shop - Vercel](https://ignite-shop-pedrogouveia77.vercel.app)
+🔗 **Deploy:** [Ignite Shop - Vercel]()
 
 ---
 
@@ -41,7 +40,6 @@ A aplicação permite:
 - **next** → Framework React
 - **react** → Biblioteca base
 - **react-dom** → Renderização React
-- **use-shopping-cart** → Gerenciamento de carrinho
 
 ---
 
@@ -59,12 +57,6 @@ A aplicação permite:
 ✅ Processamento de pagamentos
 ✅ Confirmação de compra
 
-### 🛒 **Carrinho de Compras**
-✅ Adição de produtos
-✅ Remoção de produtos
-✅ Atualização de quantidade
-✅ Cálculo de total
-
 ### 📱 **Interface Responsiva**
 ✅ Design adaptativo
 ✅ Navegação intuitiva
@@ -77,7 +69,6 @@ A aplicação permite:
 
 ### 🌍 **Gerenciamento de Estado**
 🔹 **Context API** para estado global
-🔹 **useShoppingCart** para gerenciamento do carrinho
 🔹 **Stripe** para processamento de pagamentos
 
 ### 🏗 **Componentização**
