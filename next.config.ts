@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['files.stripe.com'],
   },
-  
+  reactStrictMode: true,
+  swcMinify: true,
 };
 
 export default nextConfig;
