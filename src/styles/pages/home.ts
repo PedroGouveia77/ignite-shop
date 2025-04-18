@@ -2,6 +2,7 @@ import { styled } from "..";
 
 export const HomeContainer = styled("main", {
     display: "flex",
+    gap: "3rem",
     maxWidth: "calc(100vw - ((100vw - 1180px) / 2))",
     marginLeft: "auto",
     minHeight: 656,
@@ -16,6 +17,7 @@ export const Product = styled("div", {
     alignItems: "center",
     justifyContent: "center",
     overflow: "hidden",
+    minWidth: 540,
 
     img: {
        objectFit: "cover",
@@ -38,6 +40,7 @@ export const Product = styled("div", {
         
         strong: {
             fontSize: "$lg",
+            color: "$gray100",
         },
 
         span: {
@@ -45,11 +48,9 @@ export const Product = styled("div", {
             fontWeight: "bold",
             color: "$green300",
         },
-        
-        
     },
 
-    '&:hover': {
+    "&:hover": {
         footer: {
             transform: "translateY(0%)",
             opacity: 1,
