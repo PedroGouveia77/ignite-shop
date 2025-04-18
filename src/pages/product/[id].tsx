@@ -1,7 +1,7 @@
 import { stripe } from "@/lib/stripe";
 import { ImageContainer, ProductContainer, ProductDetails } from "@/styles/pages/product";
 import axios from "axios";
-import { GetStaticProps, GetStaticPaths } from "next";
+import { GetStaticProps, GetStaticPaths, GetServerSideProps } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
@@ -66,13 +66,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps<ProductProps, { id: string }> = async ({ params }) => {
-  const productId = params?.id;
+export const getServerSideProps: GetServerSideProps<ProductProps> = async ({ params }) => {
+  const productId = params?.id as string;
 
-  if (!productId) {
+  if (!productId || typeof productId !== 'string') {
     return {
       notFound: true,
-    }
+    };
   }
 
   const product = await stripe.products.retrieve(productId, {
@@ -90,11 +90,10 @@ export const getStaticProps: GetStaticProps<ProductProps, { id: string }> = asyn
         price: new Intl.NumberFormat('pt-BR', {
           style: 'currency',
           currency: 'BRL',
-        }).format((price.unit_amount ?? 0 )/ 100),
+        }).format((price.unit_amount ?? 0) / 100),
         description: product.description,
         defaultPriceId: price.id,
       },
     },
-    revalidate: 60 * 60 * 1, // 1 hour
   };
-}
+};
