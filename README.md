@@ -90,8 +90,8 @@ A aplicação permite:
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/PedroGouveia77/prototipo-igniteshop.git
-   cd prototipo-igniteshop
+   git clone https://github.com/PedroGouveia77/ignite-shop.git
+   cd ignite-shop
    ```
 
 2. Instale as dependências:
